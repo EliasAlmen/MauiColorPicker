@@ -10,6 +10,49 @@
         <Color x:Key="Third">#8ECAE6</Color>
     </ContentPage.Resources>
 
-    <Grid x:Name="Container" BackgroundColor="Black" />
+    <Grid x:Name="Container" BackgroundColor="Black">
+        <Frame Margin="10,0,10,0" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="15" VerticalOptions="Center">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalTextAlignment="Center"
+                    Text="Color Picker" />
+                <Label Text="Blue value" />
+                <Slider
+                    x:Name="SldBlue"
+                    MaximumTrackColor="{StaticResource Third}"
+                    MinimumTrackColor="{StaticResource Secondary}"
+                    ThumbColor="{StaticResource Primary}" />
+                <Label Text="Green value" />
+                <Slider
+                    x:Name="SldGreen"
+                    MaximumTrackColor="{StaticResource Third}"
+                    MinimumTrackColor="{StaticResource Secondary}"
+                    ThumbColor="{StaticResource Primary}" />
+                <Label Text="Red value" />
+                <Slider
+                    x:Name="SldRed"
+                    MaximumTrackColor="{StaticResource Third}"
+                    MinimumTrackColor="{StaticResource Secondary}"
+                    ThumbColor="{StaticResource Primary}" />
+                <Frame CornerRadius="25" HorizontalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Label
+                            x:Name="lblHex"
+                            HorizontalTextAlignment="End"
+                            Text="HEX Value: #000000"
+                            VerticalOptions="Center" />
+                        <ImageButton
+                            Margin="10,0,0,0"
+                            HeightRequest="25"
+                            Source="copy.svg"
+                            VerticalOptions="Center"
+                            WidthRequest="25" />
+                    </HorizontalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>
