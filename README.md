@@ -1,1 +1,1 @@
-![Screenshot](/pic.png?raw=true "Maui Color Picker")
+![Screenshot](./pic.png?raw=true "Maui Color Picker")
